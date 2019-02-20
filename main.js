@@ -28,6 +28,10 @@ let car = {
 
 	honk() {
 		alert("Honk! Honk!");
+	},
+
+	notAvail() {
+		alert("Not available. Get a tuneup.");
 	}
 };
 
@@ -48,6 +52,20 @@ const rewriteStats= () => {
 document.onkeyup = (event) => {
 	// Captures the key press, converts it to lowercase, and saves it to a variable.
 	let letter = String.fromCharCode(event.keyCode).toLowerCase();
+
+	if (letter === "d" && car.isWorking === false) {
+			car.notAvail();
+			car.mileage -= 10;
+		}
+		else if (letter === "r" && car.isWorking === false) {
+			car.notAvail();
+			car.mileage -= 7000;
+		}
+		else if (letter === "h" && car.isWorking === false) {
+			car.notAvail();
+		}
+
+
 
 	if (letter === "d") {
 		car.driveToWork();
