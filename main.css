@@ -1,0 +1,24 @@
+h1, h2 {
+	text-align: center;
+	font-family: 'The Bold Font';
+	line-height: 15px;
+	margin-left: 400px;
+	margin-right: 400px;
+	color: #ffffff;
+}
+
+#squish {
+	line-height: 25px;
+}
+
+img {
+	margin-left: 580px;
+	border: solid 4px #ffffff;
+	border-radius: 5px;
+}
+
+body {
+	background-image: url('https://s3.amazonaws.com/spoonflower/public/design_thumbnails/0461/8808/rrr9_Pop_Art-_Red_-_Polka_Black_Dots_shop_preview.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
